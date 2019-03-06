@@ -7,13 +7,9 @@ import { withStyles } from '@material-ui/core/styles';
 
 import { styles } from './style';
 
-import LeftNav from '../Components/NavBar/LeftNav';
-import PopUp from '../Components/PopUp';
+import TopNav from '../Components/NavBar/TopNav';
 
 import Home from '../View/Home';
-import GroupChat from '../View/GroupChat';
-import HotTopic from '../View/HotTopic';
-import NotFound from '../View/NotFound';
 
 class Router extends Component<Props> {
   static defaultProps = {
@@ -24,12 +20,9 @@ class Router extends Component<Props> {
     const { classes } = this.props;
     return (
       <BrowserRouter>
-        <div className={classes.mainWrapper}>
-          <PopUp />
-          <LeftNav />
-          <div className={classes.rightWrapper}>
-            <Route path="/groupchat" exact component={GroupChat} />
-            <Route path="/hottopic" exact component={HotTopic} />
+        <div>
+          <TopNav />
+          <div className={classes.mainWrapper}>
             <Route path="/" exact component={Home} />
           </div>
         </div>

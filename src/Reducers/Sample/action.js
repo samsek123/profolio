@@ -1,4 +1,3 @@
-import update from 'react-addons-update';
 import * as type from '../type';
 
 export function sampleAction() {
