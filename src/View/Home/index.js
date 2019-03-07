@@ -6,6 +6,7 @@ import { withStyles } from '@material-ui/core/styles';
 import { styles } from './style';
 
 // Sub Components
+import Header from './Components/Header';
 
 class Home extends Component<Props> {
   constructor() {
@@ -18,6 +19,7 @@ class Home extends Component<Props> {
     const { classes } = this.props;
     return (
       <div className={classes.homeWrapper}>
+        <Header />
       </div>
     )
   }
