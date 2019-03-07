@@ -47,13 +47,13 @@ export const styles = theme => ({
     color: 'white',
     top: '30%',
     zIndex: 10,
-    padding: '20px',
+    padding: '20px 40px',
   },
   backgroundWrapper: {
     position: 'absolute',
     top: '30%',
     zIndex: 9,
-    padding: '20px',
+    padding: '20px 40px',
     backgroundColor: 'rgba(46, 46, 46, 0.5)',
   },
   opacityNone: {

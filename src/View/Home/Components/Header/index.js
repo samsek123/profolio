@@ -19,8 +19,6 @@ class Header extends Component<Props> {
   constructor() {
     super();
     this.state = {
-      isStopped: false,
-      isPaused: false,
     };
   }
 
