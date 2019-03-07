@@ -13,10 +13,33 @@ import { styles } from './style';
 import { Button } from'../../../../Components/StyledComponent';
 
 class ContactMe extends Component<Props> {
+  constructor() {
+    super();
+    this.state = {
+      name: '',
+      email: '',
+      content: '',
+    };
+    this.handleChange = this.handleChange.bind(this);
+    this.submitEnquiry = this.submitEnquiry.bind(this);
+  }
+
+  handleChange(type, value) {
+    this.setState({ [type]: value });
+  }
+
+  submitEnquiry() {
+    const { name, email, content } = this.state;
+    const subject = `A new enquiry from ${name}`;
+    const contentWithEmail = `Here is a new enquiry from ${name}(${email}): ${content}`;
+    window.location.href = `mailto:samsek123@gmail.com?subject=${subject}&body=${contentWithEmail}`;
+  }
+
   render() {
     const { classes } = this.props;
+    const { name, email, content } = this.state;
     return (
-      <div className={classes.contactMeWrapper}>
+      <div className={classes.contactMeWrapper} id="contact">
         <Grid container spacing={0} alignItems="stretch">
           <Grid container sm={6}>
             <div className={classes.contactInfoWrapper}>
@@ -43,6 +66,8 @@ class ContactMe extends Component<Props> {
                 }}
                 label="Name *"
                 margin="normal"
+                value={name}
+                onChange={(event) => this.handleChange('name', event.target.value)}
               />
               <TextField
                 className={classes.textField}
@@ -61,6 +86,8 @@ class ContactMe extends Component<Props> {
                 }}
                 label="Your Email *"
                 margin="normal"
+                value={email}
+                onChange={(event) => this.handleChange('email', event.target.value)}
               />
               <TextField
                 className={classes.textField}
@@ -79,8 +106,16 @@ class ContactMe extends Component<Props> {
                 }}
                 label="Message"
                 margin="normal"
+                value={content}
+                onChange={(event) => this.handleChange('content', event.target.value)}
               />
-              <Button className={classes.sendButton} minh full>Send Enquiry</Button>
+              <Button
+                onClick={(event) => this.submitEnquiry()}
+                className={classes.sendButton}
+                minh
+                full>
+                  Send Enquiry
+              </Button>
             </div>
           </Grid>
         </Grid>

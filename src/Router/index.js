@@ -8,6 +8,7 @@ import { withStyles } from '@material-ui/core/styles';
 import { styles } from './style';
 
 import TopNav from '../Components/NavBar/TopNav';
+import Footer from '../Components/NavBar/Footer';
 
 import Home from '../View/Home';
 
@@ -25,6 +26,7 @@ class Router extends Component<Props> {
           <div className={classes.mainWrapper}>
             <Route path="/" exact component={Home} />
           </div>
+          <Footer />
         </div>
       </BrowserRouter>
     );

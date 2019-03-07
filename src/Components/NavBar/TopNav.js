@@ -1,11 +1,9 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
-import classNames from 'classnames';
 
 // Redux
 import { connect } from 'react-redux';
-import { bindActionCreators } from 'redux';
 
 // Material UI
 import Avatar from '@material-ui/core/Avatar';
@@ -19,12 +17,12 @@ import MenuItem from '@material-ui/core/MenuItem';
 // Icon List
 import ListIcon from '@material-ui/icons/List';
 
-// Image
-import logoWhite from'../../Assets/Image/logo_white.png';
-import logoBlack from'../../Assets/Image/logo_black.png';
-
 // Router
 import {withRouter} from 'react-router-dom';
+import animateScrollTo from 'animated-scroll-to';
+
+// Image
+import logoWhite from'../../Assets/Image/logo_white.png';
 
 // import logo from'../../Assets/Image/logo.png';
 import { styles } from './style';
@@ -56,6 +54,7 @@ class TopNav extends Component<Props> {
     if (action === 'open') {
       this.setState({ anchorEl: event.currentTarget });
     } else {
+      animateScrollTo(document.querySelector(`#${action}`));
       this.setState({ anchorEl: null });
     }
   }

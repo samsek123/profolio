@@ -34,4 +34,23 @@ export const styles = theme => ({
       display: 'none',
     },
   },
+  // footer
+  footer: {
+    padding: '40px 0',
+    backgroundColor: '#151515',
+    textAlign: 'center',
+  },
+  footerText: {
+    textAlign: 'center',
+    color: 'white',
+    fontSize: 10,
+  },
+  logoSet: {
+    width: '30%',
+    maxWidth: 100,
+  },
+  iconSet: {
+    width: 20,
+    margin: '10px 10px',
+  },
 });
