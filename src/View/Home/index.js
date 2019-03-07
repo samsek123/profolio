@@ -9,6 +9,7 @@ import { styles } from './style';
 import Header from './Components/Header';
 import SelfIntro from './Components/SelfIntro';
 import SkillSet from './Components/SkillSet';
+import MyServices from './Components/MyServices';
 
 class Home extends Component<Props> {
   constructor() {
@@ -24,6 +25,7 @@ class Home extends Component<Props> {
         <Header />
         <SelfIntro />
         <SkillSet />
+        <MyServices />
       </div>
     )
   }
