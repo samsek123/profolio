@@ -26,7 +26,7 @@ class SelfIntro extends Component<Props> {
           <Grid container sm={6} justify="center" direction="column" alignItems="center">
             <div className={classes.mobileWrapper}>
               <h2 className={classes.subTitleText}>ABOUT ME</h2>
-              <p className={classes.descriptionText}>Well-qualified Full Stack Developer, Designer. Familiar with a wide range of programming utilities and languages. Knowledgeable of backend and frontend development requirements. Able to handle any part of the process with ease.</p>
+              <p className={classes.descriptionText}>Well-experienced Full Stack Developer, Designer, Video Editor. Familiar with a wide range of design software, video editing software, programming utilities and languages. Knowledgeable of backend and frontend development requirements. Able to handle any part of the process with ease.</p>
               <p className={classes.contactMeButton}>
                 <Button primary >CONTACT ME</Button>
               </p>

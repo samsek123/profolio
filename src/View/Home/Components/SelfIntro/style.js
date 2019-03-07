@@ -23,7 +23,7 @@ export const styles = theme => ({
   },
   mobileWrapper: {
     width: '80%',
-    [theme.breakpoints.down('sm')]: {
+    [theme.breakpoints.down('xs')]: {
       marginTop: 30,
       marginBottom: 30,
     },

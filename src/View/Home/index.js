@@ -8,6 +8,7 @@ import { styles } from './style';
 // Sub Components
 import Header from './Components/Header';
 import SelfIntro from './Components/SelfIntro';
+import SkillSet from './Components/SkillSet';
 
 class Home extends Component<Props> {
   constructor() {
@@ -22,6 +23,7 @@ class Home extends Component<Props> {
       <div className={classes.homeWrapper}>
         <Header />
         <SelfIntro />
+        <SkillSet />
       </div>
     )
   }
