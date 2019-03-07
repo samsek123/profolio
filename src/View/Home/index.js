@@ -11,6 +11,7 @@ import SelfIntro from './Components/SelfIntro';
 import SkillSet from './Components/SkillSet';
 import MyServices from './Components/MyServices';
 import MyWorks from './Components/MyWorks';
+import ContactMe from './Components/ContactMe';
 
 class Home extends Component<Props> {
   constructor() {
@@ -28,6 +29,7 @@ class Home extends Component<Props> {
         <SkillSet />
         <MyServices />
         <MyWorks />
+        <ContactMe />
       </div>
     )
   }

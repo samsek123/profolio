@@ -2,7 +2,6 @@ export const styles = theme => ({
   myWorksWrapper: {
     width: '100%',
     paddingTop: 30,
-    paddingBottom: 30,
     backgroundColor: '#F9F9F9',
   },
   subTitleText: {
