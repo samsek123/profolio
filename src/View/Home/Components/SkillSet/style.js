@@ -11,10 +11,15 @@ export const styles = theme => ({
     width: '100%',
     height: '100%',
   },
-  mobileWrapper: {
+  topWrapper: {
     width: '80%',
     [theme.breakpoints.down('xs')]: {
       marginTop: 30,
+    },
+  },
+  belowWrapper: {
+    width: '80%',
+    [theme.breakpoints.down('xs')]: {
       marginBottom: 30,
     },
   },
@@ -24,11 +29,14 @@ export const styles = theme => ({
   descriptionText: {
     margin: 0,
     padding: 0,
-    fontSize: '1.5vw',
+    fontSize: '1.4em',
     textAlign: 'left',
     color: 'white',
-    lineHeight: 2,
+    lineHeight: 1.5,
     marginTop: 10,
+    [theme.breakpoints.down('sm')]: {
+      fontSize: '1em',
+    },
   },
   desktopShow: {
     [theme.breakpoints.down('xs')]: {

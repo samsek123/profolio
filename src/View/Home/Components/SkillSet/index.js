@@ -31,7 +31,7 @@ class SkillSet extends Component<Props> {
         <img className={classes.mobileShow} src={skillBGMobile} alt="skill set mobile" />
         <Grid className={classes.skillSetMainWrapper} container spacing={0} alignItems="stretch">
           <Grid container sm={6} justify="center" direction="column" alignItems="center">
-            <div className={classes.mobileWrapper}>
+            <div className={classes.topWrapper}>
               <img className={classes.titleText} src={skillTitle} alt="skill set title" />
               <p className={classes.descriptionText}>
               Full Stack Programmer, Graphic Designer, Video Editor who expertly researches and develops emerging concepts and trends. Tech-savvy and creative. Background in desktop and mobile platforms developing user-friendly products. Skilled in using VueJS, ReactJS, PHP, Python, NodeJS and More.
@@ -39,7 +39,7 @@ class SkillSet extends Component<Props> {
             </div>
           </Grid>
           <Grid container sm={6} justify="center" direction="column" alignItems="center">
-            <div className={classes.mobileWrapper}>
+            <div className={classes.belowWrapper}>
               <SkillBar
                 skills={skills}
               />

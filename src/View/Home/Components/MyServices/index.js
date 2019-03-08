@@ -34,7 +34,7 @@ class MyServices extends Component<Props> {
                 </div>
               </Grid>
               <Grid item sm={4}>
-                <div className={classes.mobileWrapper}>
+                <div className={classes.picWrapper}>
                   <img src={fullStack} alt="FullStack" />
                 </div>
               </Grid>
@@ -52,7 +52,7 @@ class MyServices extends Component<Props> {
                 </div>
               </Grid>
               <Grid item sm={4}>
-                <div className={classes.mobileWrapper}>
+                <div className={classes.picWrapper}>
                   <img src={uiux} alt="UI UX" />
                 </div>
               </Grid>
@@ -70,7 +70,7 @@ class MyServices extends Component<Props> {
                 </div>
               </Grid>
               <Grid item sm={4}>
-                <div className={classes.mobileWrapper}>
+                <div className={classes.picWrapper}>
                   <img src={videoEditing} alt="Video Editing" />
                 </div>
               </Grid>
@@ -88,7 +88,7 @@ class MyServices extends Component<Props> {
                 </div>
               </Grid>
               <Grid item sm={4}>
-                <div className={classes.mobileWrapper}>
+                <div className={classes.picWrapper}>
                   <img src={motionGraphic} alt="Motion Graphic" />
                 </div>
               </Grid>

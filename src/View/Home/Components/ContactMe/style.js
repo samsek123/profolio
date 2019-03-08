@@ -10,16 +10,22 @@ export const styles = theme => ({
   subTitleText: {
     margin: 0,
     padding: 0,
-    fontSize: '3.5vw',
+    fontSize: '3em',
     textAlign: 'left',
+    [theme.breakpoints.down('sm')]: {
+      fontSize: '1.5em',
+    },
   },
   descriptionText: {
     margin: 0,
     padding: 0,
-    fontSize: '1.5vw',
+    fontSize: '1.4em',
     textAlign: 'left',
-    lineHeight: 2,
+    lineHeight: 1.5,
     marginTop: 10,
+    [theme.breakpoints.down('sm')]: {
+      fontSize: '1em',
+    },
   },
   contactInfoWrapper: {
     width: '80%',
@@ -28,6 +34,15 @@ export const styles = theme => ({
     paddingBottom: '8vw',
     [theme.breakpoints.down('xs')]: {
       marginTop: 30,
+    },
+  },
+  contactFieldWrapper: {
+    width: '80%',
+    margin: 'auto',
+    paddingTop: '8vw',
+    paddingBottom: '8vw',
+    [theme.breakpoints.down('xs')]: {
+      paddingTop: 0,
       marginBottom: 30,
     },
   },

@@ -48,7 +48,7 @@ class ContactMe extends Component<Props> {
             </div>
           </Grid>
           <Grid container sm={6}>
-            <div className={classes.contactInfoWrapper}>
+            <div className={classes.contactFieldWrapper}>
               <TextField
                 className={classes.textField}
                 fullWidth

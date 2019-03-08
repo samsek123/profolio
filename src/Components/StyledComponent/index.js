@@ -4,7 +4,7 @@ export const Button = styled.button`
   cursor: pointer;
   text-align: center;
   width: ${props => props.full ? '100%' : 'auto'};
-  font-size: ${props => props.fontSize ? props.fontSize : '1.5vw'};
+  font-size: ${props => props.fontSize ? props.fontSize : '1.4em'};
   padding: ${props => props.minh ? '7px 20px' : '2vw 5vw'};
   transition: color .3s, background-color .3s;
   -webkit-transition: color .3s, background-color .3s;

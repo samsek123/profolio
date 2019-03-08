@@ -7,7 +7,10 @@ export const styles = theme => ({
   subTitleText: {
     textAlign: 'center',
     color: '#E74C3C',
-    fontSize: '3.5vw',
+    fontSize: '3em',
+    [theme.breakpoints.down('sm')]: {
+      fontSize: '1.5em',
+    },
   },
   secondLayer: {
     marginTop: -3,
@@ -17,7 +20,7 @@ export const styles = theme => ({
     textAlign: 'center',
   },
   tabRoot: {
-    fontSize: '1.5vw',
+    fontSize: '1.4em',
     padding: 0,
     '&$tabSelected': {
       color: '#E74C3C',
@@ -29,6 +32,9 @@ export const styles = theme => ({
     },
     '&:focus': {
       color: '#E74C3C',
+    },
+    [theme.breakpoints.down('sm')]: {
+      fontSize: '0.8em',
     },
   },
   tabSelected: {
