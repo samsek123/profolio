@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/static/media/skill_title.d156cb90.png"
   },
   {
-    "revision": "211cec8e64425aec6012",
+    "revision": "4e2f4997340e5d688428",
     "url": "/static/css/main.e65a8804.chunk.css"
   },
   {
@@ -44,8 +44,8 @@ self.__precacheManifest = [
     "url": "/static/media/profile.fdbc14af.jpg"
   },
   {
-    "revision": "211cec8e64425aec6012",
-    "url": "/static/js/main.211cec8e.chunk.js"
+    "revision": "4e2f4997340e5d688428",
+    "url": "/static/js/main.4e2f4997.chunk.js"
   },
   {
     "revision": "0f81171857bc477a91f1212f35e80833",
@@ -88,7 +88,7 @@ self.__precacheManifest = [
     "url": "/static/media/mircomodule.35e44518.png"
   },
   {
-    "revision": "3530f200377b0ede93832cb26ecac46f",
+    "revision": "2821c7aed2084fae60232df8800e5a3a",
     "url": "/index.html"
   }
 ];

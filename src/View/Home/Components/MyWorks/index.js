@@ -30,6 +30,7 @@ class MyWorks extends Component<Props> {
   }
 
   selectTab(tabValue) {
+    console.log(tabValue);
     this.setState({
       selectedTab: tabValue,
     });
@@ -68,7 +69,7 @@ class MyWorks extends Component<Props> {
         <SwipeableViews
           axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
           index={selectedTab}
-          onChange={(index) => this.selectTab(index)}
+          onChangeIndex={(value) => this.selectTab(value)}
           className={classes.profolioList}
         >
           <div component="nav" dir={theme.direction}>
