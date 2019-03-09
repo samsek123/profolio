@@ -12,6 +12,15 @@ export const styles = theme => ({
       fontSize: '1.5em',
     },
   },
+  profilePic: {
+    [theme.breakpoints.down('xs')]: {
+      borderRadius: '50%',
+      width: '40%',
+      position: 'relative',
+      left: '30%',
+      marginTop: 50,
+    },
+  },
   descriptionText: {
     margin: 0,
     padding: 0,

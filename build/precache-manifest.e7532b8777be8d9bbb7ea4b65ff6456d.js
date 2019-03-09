@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/static/media/skill_title.d156cb90.png"
   },
   {
-    "revision": "4e2f4997340e5d688428",
+    "revision": "030a8e7c5d375cd6fec0",
     "url": "/static/css/main.e65a8804.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = [
     "url": "/static/js/runtime~main.fdfcfda2.js"
   },
   {
-    "revision": "e9234fb08dfa4019ee9f",
-    "url": "/static/js/2.e9234fb0.chunk.js"
+    "revision": "532bbb2a5f97fcf3aa8e",
+    "url": "/static/js/2.532bbb2a.chunk.js"
   },
   {
     "revision": "25ef56c06eb39e136e1e60c528af7eb6",
@@ -44,8 +44,8 @@ self.__precacheManifest = [
     "url": "/static/media/profile.fdbc14af.jpg"
   },
   {
-    "revision": "4e2f4997340e5d688428",
-    "url": "/static/js/main.4e2f4997.chunk.js"
+    "revision": "030a8e7c5d375cd6fec0",
+    "url": "/static/js/main.030a8e7c.chunk.js"
   },
   {
     "revision": "0f81171857bc477a91f1212f35e80833",
@@ -88,7 +88,7 @@ self.__precacheManifest = [
     "url": "/static/media/mircomodule.35e44518.png"
   },
   {
-    "revision": "2821c7aed2084fae60232df8800e5a3a",
+    "revision": "4f0b3e5416b7db0d893a1fd72856d978",
     "url": "/index.html"
   }
 ];

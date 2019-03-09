@@ -1,7 +1,10 @@
 export const styles = theme => ({
   barWrapper: {
     marginTop: 10,
-    fontSize: '1.5vw',
+    fontSize: '1.4em',
+    [theme.breakpoints.down('sm')]: {
+      fontSize: '1em',
+    },
   },
   titleText: {
     color: 'white',

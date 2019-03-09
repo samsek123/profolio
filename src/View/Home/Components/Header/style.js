@@ -62,20 +62,37 @@ export const styles = theme => ({
   nameText: {
     margin: 0,
     padding: 0,
-    fontSize: '8vw',
+    fontSize: '6em',
+    [theme.breakpoints.down('sm')]: {
+      fontSize: '3em',
+    },
+    [theme.breakpoints.down('xs')]: {
+      fontSize: '2em',
+    },
   },
   extraText: {
     margin: 0,
     padding: 0,
-    fontSize: '3.5vw',
+    fontSize: '3em',
     marginTop: -20,
     [theme.breakpoints.down('sm')]: {
+      fontSize: '2em',
       marginTop: 0,
+    },
+    [theme.breakpoints.down('xs')]: {
+      marginTop: 0,
+      fontSize: '1em',
     },
   },
   supportText: {
     margin: 0,
     padding: 0,
-    fontSize: '1.5vw',
+    fontSize: '1.4em',
+    [theme.breakpoints.down('sm')]: {
+      fontSize: '1em',
+    },
+    [theme.breakpoints.down('xs')]: {
+      fontSize: '0.5em',
+    },
   },
 });
