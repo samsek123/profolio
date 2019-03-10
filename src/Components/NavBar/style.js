@@ -16,10 +16,12 @@ export const styles = theme => ({
   },
   appInverse: {
     backgroundColor: 'white',
+    color: '#2E2E2E',
   },
   bigLogo: {
     width: 75,
     height: 75,
+    cursor: 'pointer',
   },
   menuButton: {
     marginLeft: 20,

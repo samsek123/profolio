@@ -25,7 +25,7 @@ class Header extends Component<Props> {
   render() {
     const { classes } = this.props;
     return (
-      <div className={classes.headerWrapper}>
+      <div className={classes.headerWrapper} id="home">
         <div className={classes.infoWrapper}>
           <Typing>
             <h1 className={classes.nameText}>

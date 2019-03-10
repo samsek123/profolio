@@ -41,7 +41,7 @@ class Footer extends Component<Props> {
 
 Footer.propTypes = {
   classes: PropTypes.object.isRequired,
-  pathname: PropTypes.string.isRequired,
+  location: PropTypes.object.isRequired,
 }
 
 export default withRouter(withStyles(styles)(Footer));

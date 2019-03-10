@@ -40,7 +40,7 @@ class MyWorks extends Component<Props> {
     const { classes, theme } = this.props;
     const { selectedTab } = this.state;
     return (
-      <div className={classes.myWorksWrapper} id="works">
+      <div className={classes.myWorksWrapper} id="myworks">
         <h2 className={classes.subTitleText}>MY WORKS</h2>
         <div className={classes.tabsWrapper}>
           <Tabs

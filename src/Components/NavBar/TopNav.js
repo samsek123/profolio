@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
+import classNames from 'classnames';
 
 // Redux
 import { connect } from 'react-redux';
@@ -23,6 +24,7 @@ import animateScrollTo from 'animated-scroll-to';
 
 // Image
 import logoWhite from'../../Assets/Image/logo_white.png';
+import logoBlack from'../../Assets/Image/logo_black.png';
 
 // import logo from'../../Assets/Image/logo.png';
 import { styles } from './style';
@@ -51,29 +53,37 @@ class TopNav extends Component<Props> {
   }
 
   chooseMenu(event, action) {
+    const { location } = this.props;
+    const redirectPage = location.pathname === '/';
     if (action === 'open') {
       this.setState({ anchorEl: event.currentTarget });
     } else {
-      animateScrollTo(document.querySelector(`#${action}`));
-      this.setState({ anchorEl: null });
+      if (!redirectPage) {
+        this.props.history.push('/');
+      } else {
+        animateScrollTo(document.querySelector(`#${action}`));
+        this.setState({ anchorEl: null });
+      }
     }
   }
 
   render() {
-    const { classes } = this.props;
+    const { classes, location } = this.props;
     const { anchorEl } = this.state;
+    const whiteTone = location.pathname.includes('myworks');
     return (
       <div className={classes.root}>
         <AppBar
           position="relative"
-          className={classes.appBar}
+          className={classNames(classes.appBar, whiteTone && classes.appInverse)}
         >
           <Toolbar>
             <div className={classes.grow}>
               <Avatar
                 alt="logo"
-                src={logoWhite}
-                className={classes.bigLogo} />
+                src={(whiteTone) ? logoBlack : logoWhite}
+                className={classes.bigLogo}
+                onClick={(e) => this.chooseMenu(e, 'home')}/>
             </div>
             <Button
               className={classes.navButton}
@@ -89,7 +99,7 @@ class TopNav extends Component<Props> {
               disableRipple={true}
               color="inherit"
               size="large"
-              onClick={(e) => this.chooseMenu(e, 'works')}
+              onClick={(e) => this.chooseMenu(e, 'myworks')}
             >
               My works
             </Button>
@@ -122,7 +132,7 @@ class TopNav extends Component<Props> {
           onClose={(e) => this.chooseMenu(e, '')}
         >
           <MenuItem onClick={(e) => this.chooseMenu(e, 'about')}>About me</MenuItem>
-          <MenuItem onClick={(e) => this.chooseMenu(e, 'works')}>My works</MenuItem>
+          <MenuItem onClick={(e) => this.chooseMenu(e, 'myworks')}>My works</MenuItem>
           <MenuItem onClick={(e) => this.chooseMenu(e, 'contact')}>Contact me</MenuItem>
         </Menu>
       </div>
@@ -132,7 +142,7 @@ class TopNav extends Component<Props> {
 
 TopNav.propTypes = {
   classes: PropTypes.object.isRequired,
-  pathname: PropTypes.string.isRequired,
+  location: PropTypes.object.isRequired,
 }
 
 export default withRouter(withStyles(styles)(connect(mapStateToProps, mapDispatchToProps)(TopNav)));

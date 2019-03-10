@@ -30,7 +30,7 @@ export const styles = theme => ({
     lineHeight: 1.5,
     marginTop: 10,
     [theme.breakpoints.down('sm')]: {
-      fontSize: '1em',
+      fontSize: '0.9em',
     },
   },
   contactMeButton: {

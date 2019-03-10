@@ -11,6 +11,8 @@ import TopNav from '../Components/NavBar/TopNav';
 import Footer from '../Components/NavBar/Footer';
 
 import Home from '../View/Home';
+import MyWorks from '../View/MyWorks';
+import MyWorksDetail from '../View/MyWorksDetail';
 
 class Router extends Component<Props> {
   static defaultProps = {
@@ -25,6 +27,8 @@ class Router extends Component<Props> {
           <TopNav />
           <div className={classes.mainWrapper}>
             <Route path="/" exact component={Home} />
+            <Route path="/myworks" exact component={MyWorks} />
+            <Route path="/myworks/1" exact component={MyWorksDetail} />
           </div>
           <Footer />
         </div>

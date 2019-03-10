@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/static/media/skill_title.d156cb90.png"
   },
   {
-    "revision": "030a8e7c5d375cd6fec0",
+    "revision": "20b3462f1a0e967e03b3",
     "url": "/static/css/main.e65a8804.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = [
     "url": "/static/js/runtime~main.fdfcfda2.js"
   },
   {
-    "revision": "532bbb2a5f97fcf3aa8e",
-    "url": "/static/js/2.532bbb2a.chunk.js"
+    "revision": "80af2e6eb935af60f10c",
+    "url": "/static/js/2.80af2e6e.chunk.js"
   },
   {
     "revision": "25ef56c06eb39e136e1e60c528af7eb6",
@@ -32,6 +32,10 @@ self.__precacheManifest = [
     "url": "/static/media/gamechat.6fca04b3.png"
   },
   {
+    "revision": "3f1fd8386c0f1087c7a4c9b0d867be07",
+    "url": "/static/media/logo_black.3f1fd838.png"
+  },
+  {
     "revision": "3a3b072658b3b68863c93713e69b5b56",
     "url": "/static/media/earth.3a3b0726.svg"
   },
@@ -44,8 +48,8 @@ self.__precacheManifest = [
     "url": "/static/media/profile.fdbc14af.jpg"
   },
   {
-    "revision": "030a8e7c5d375cd6fec0",
-    "url": "/static/js/main.030a8e7c.chunk.js"
+    "revision": "20b3462f1a0e967e03b3",
+    "url": "/static/js/main.20b3462f.chunk.js"
   },
   {
     "revision": "0f81171857bc477a91f1212f35e80833",
@@ -88,7 +92,7 @@ self.__precacheManifest = [
     "url": "/static/media/mircomodule.35e44518.png"
   },
   {
-    "revision": "4f0b3e5416b7db0d893a1fd72856d978",
+    "revision": "6307068debc1e9c718b01207aaca1b87",
     "url": "/index.html"
   }
 ];
